@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build HelloWorld.c",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-o", "aes_encrypt",
+                "HelloWorld.c",
+                "-lssl",
+                "-lcrypto"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Generated task by VSCode."
+        }
+    ]
+}
